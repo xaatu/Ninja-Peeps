@@ -835,10 +835,10 @@ def level_four():
     
 
     def main_game():
-    # Existing main_game code...
+    
         level_complete = False
     while not level_complete:
-        # Existing game loop code...
+        
         pass
 
 pygame.quit() 
@@ -846,4 +846,4 @@ pygame.quit()
 if __name__ == '__main__':
     main_game_process = multiprocessing.Process(target=level_one)
     main_game_process.start()
-    main_game_process.join()  # Wait for the main game to finish before exiting the script
+    main_game_process.join()  

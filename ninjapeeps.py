@@ -21,7 +21,7 @@ WHITE = (255, 255, 255)
 floor_image = pygame.image.load("images/floor2.png").convert_alpha()
 floor_width = 100
 floor_height = 100
-floor_image = pygame.transform.scale(floor_image, (floor_width, floor_height))  # Set fixed width for tiling
+floor_image = pygame.transform.scale(floor_image, (floor_width, floor_height))  
 peeps_images = [
     pygame.image.load("images/peeps1.png").convert_alpha(),
     pygame.image.load("images/peeps2.png").convert_alpha() 
@@ -258,7 +258,6 @@ def level_one():
     # DEFINE PLATFORMS (LEVEL 1)
     platforms = [
         (0, screen_height - 0),
-      
     ]
 
     # DEFINE FISH (LEVEL 1)
@@ -425,7 +424,7 @@ def level_two():
     floor_image = pygame.image.load("images/floor.png").convert_alpha()
     floor_image = pygame.transform.scale(floor_image, (floor_width, floor_height))
     
-    global on_ground, player_velocity_y, camera_x, coin_frame_count, coin_current_frame, catflap_frame_count, catflap_current_frame, peeps_frame_count, peeps_current_frame, score, coins, level_complete, walk_frame_count, walk_current_frame, last_walk_update_time, jump_frame_count, jump_current_frame, last_jump_update_time, jumping  # Add 'jumping' to global variables
+    global on_ground, player_velocity_y, camera_x, coin_frame_count, coin_current_frame, catflap_frame_count, catflap_current_frame, peeps_frame_count, peeps_current_frame, score, coins, level_complete, walk_frame_count, walk_current_frame, last_walk_update_time, jump_frame_count, jump_current_frame, last_jump_update_time, jumping  
 
     pygame.init()
     screen = pygame.display.set_mode((screen_width, screen_height))
@@ -451,7 +450,7 @@ def level_two():
 
     # LOAD PLATFORM IMAGE
     platform_image = pygame.image.load("images/platform.png").convert_alpha()
-    platform_width, platform_height = 96 , 53  # Set platform dimensions
+    platform_width, platform_height = 96 , 53  
     platform_image = pygame.transform.scale(platform_image, (platform_width, platform_height))
 
     # DEFINE PLATFORMS FOR LEVEL 2
@@ -628,7 +627,7 @@ def level_three():
     floor_image = pygame.image.load("images/floor.png").convert_alpha()
     floor_image = pygame.transform.scale(floor_image, (floor_width, floor_height))
     
-    global on_ground, player_velocity_y, camera_x, coin_frame_count, coin_current_frame, catflap_frame_count, catflap_current_frame, peeps_frame_count, peeps_current_frame, score, coins, level_complete, walk_frame_count, walk_current_frame, last_walk_update_time, jump_frame_count, jump_current_frame, last_jump_update_time, jumping  # Add 'jumping' to global variables
+    global on_ground, player_velocity_y, camera_x, coin_frame_count, coin_current_frame, catflap_frame_count, catflap_current_frame, peeps_frame_count, peeps_current_frame, score, coins, level_complete, walk_frame_count, walk_current_frame, last_walk_update_time, jump_frame_count, jump_current_frame, last_jump_update_time, jumping  
 
     pygame.init()
     screen = pygame.display.set_mode((screen_width, screen_height))
@@ -642,7 +641,7 @@ def level_three():
 
     # ANIMATION TIMING
     frame_rate = 12
-    frame_duration = 1000 // frame_rate  # Duration of each frame in milliseconds
+    frame_duration = 1000 // frame_rate  
 
     # MAIN GAME LOOP
     running = True
@@ -654,7 +653,7 @@ def level_three():
 
     # PLATFORM IMAGES
     platform_image = pygame.image.load("images/platform.png").convert_alpha()
-    platform_width, platform_height = 96 , 53  # Set platform dimensions
+    platform_width, platform_height = 96 , 53  
     platform_image = pygame.transform.scale(platform_image, (platform_width, platform_height))
 
     # DEFINE PLATFORMS LEVEL 3

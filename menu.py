@@ -2,27 +2,27 @@ import pygame
 import sys
 from ninjapeeps import  level_one, level_two, level_three, level_four, level_five
 
-# Initialize Pygame
+# INITIALISE
 pygame.init() 
 
-# Set up the display
+# DISPLAY
 screen_width, screen_height = 800, 800
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Menu")
 
-# Define colors
+# DEFINE COLOURS
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
-# Set up fonts
+# FONTS
 font = pygame.font.SysFont(None, 48)
 
-# Menu options
+# MENU OPTIONS
 menu_items = ['Start Game', 'HiScore', 'Level Select']
 selected_item = 0
 
 level_options = ['Level 1', 'Level 2', 'Level 3', 'Level 4', 'Level 5']
-selected_level = 1  # Default selected level
+selected_level = 1  # DEFAULT LEVEL
 
 def draw_menu():
     screen.fill(BLACK)
@@ -50,7 +50,7 @@ def main_menu():
     while running:
         draw_menu()
         for event in pygame.event.get():
-            if event.type == pygame.QUIT:  # This is the correct event check for quitting
+            if event.type == pygame.QUIT:  
                 running = False
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_UP:
@@ -61,7 +61,7 @@ def main_menu():
                     if menu_items[selected_item] == 'Start Game':
                         level_one()
                     elif menu_items[selected_item] == 'HiScore':
-                        print("HiScore")  # Placeholder for HiScore screen
+                        print("HiScore")  
                     elif menu_items[selected_item] == 'Level Select':
                         level_selection(selected_level)
 

@@ -1,4 +1,4 @@
-Do not finish level 3, the game crashes as I never defined level_four properly and as a result it must be force quit
+Do not finish level 3, the game crashes as I never defined level_four properly and as a result it must be quit (or force quite).
 
 Building from what I learned from Missy Munch, I wanted to make a platformer that features my other cat "Peeps". This was a lot harder and most of the information I was looking for was not in the youtube videos I was watching as guides, which led to me downloading a few other platformer games on Github and testing some of their features.
 
